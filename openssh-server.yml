@@ -1,0 +1,5 @@
+---
+- hosts: web
+  tasks:
+   - name: Install openssh-server
+     yum: pkg=openssh-server state=installed update_cache=true
